@@ -14,4 +14,22 @@ module.exports = {
       console.log("result = " + output);
       res.send(output.toString());
     },
+
+    // Api2 GCD(X,Y) หรม. 
+  que2 (req,res){
+    x = parseInt(JSON.stringify(req.body['x']))
+    y = parseInt(JSON.stringify(req.body['y']))
+    console.log('x = '+ a)
+    console.log('y = '+ b)
+
+    for(i=x+y;i>0;i--)
+    {
+        if(y%i==0 && x%i==0){
+            gcd=i;
+            break;
+        }
+    }
+    console.log('GCD = '+ gcd)
+    res.send(gcd.toString())
+}
 }  

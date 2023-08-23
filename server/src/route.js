@@ -21,4 +21,7 @@ module.exports = (app) =>{
 
      //Midterm.function1
      app.post('/func1 ,',Midterm.func1)
+
+     //Midterm.function2
+     app.post('/func2 ,',Midterm.func2)
 }
